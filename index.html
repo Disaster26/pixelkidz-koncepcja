@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Fotograf szkolny i przedszkolny Warszawa | PixelKidz</title>
+<meta name="description" content="PixelKidz - zdjęcia w szkołach i przedszkolach w Warszawie i okolicach: portrety, zdjęcia klasowe i grupowe, sesje świąteczne, wiosenne i bale ósmoklasistów. Galerie dla rodziców online.">
+<link rel="icon" href="img/ikona-192.png" type="image/png">
+<link rel="preload" href="fonts/manrope-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-1600.webp" imagesrcset="img/hero-640.webp 640w, img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" imagesizes="100vw" fetchpriority="high">
+<style>
+@font-face{font-family:"Manrope";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/manrope-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B2,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/manrope-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--or:#FFAA64;--or2:#FF9A4D;--or3:#E9761F;--ink:#17181C;--txt:#3A3D45;--mut:#6A6E78;--bg2:#F2F4F7;--line:#E2E5EA;--w:1240px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--txt);font:400 17px/1.6 "Manrope",system-ui,-apple-system,"Segoe UI",sans-serif}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{color:var(--ink);line-height:1.12;margin:0;font-weight:800;letter-spacing:-.02em}
+h2{font-size:clamp(30px,4.2vw,50px)}
+h3{font-size:21px;letter-spacing:-.01em}
+p{margin:0}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--or2);color:var(--ink);font-weight:800;font-size:17px;text-decoration:none;padding:16px 26px;border:0;border-radius:4px;cursor:pointer;transition:background .2s,transform .2s}
+.btn:hover{background:var(--or)}
+.btn i{width:10px;height:10px;background:var(--ink);flex:none}
+.px{display:inline-block;width:12px;height:12px;background:var(--or);flex:none}
+/* naglowek */
+.top{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:20px}
+.logo img{width:176px;height:auto}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a{text-decoration:none;font-weight:700;font-size:15px;color:var(--ink)}
+.nav a:hover{color:var(--or3)}
+.nav .rodzic{background:var(--ink);color:#fff;padding:10px 16px;border-radius:4px;display:inline-flex;gap:9px;align-items:center}
+.nav .rodzic:hover{color:#fff;background:#2a2c33}
+.nav .tel{white-space:nowrap}
+.burger{display:none;background:none;border:0;width:44px;height:44px;padding:10px;cursor:pointer}
+.burger span{display:block;height:3px;background:var(--ink);margin:5px 0;transition:transform .25s,opacity .2s}
+/* hero */
+.hero{position:relative;min-height:calc(100svh - 70px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#3c4a2c}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,15,19,.78) 0,rgba(14,15,19,.55) 38%,rgba(14,15,19,0) 66%),linear-gradient(180deg,rgba(14,15,19,0) 55%,rgba(14,15,19,.55) 100%)}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-top:120px;padding-bottom:56px}
+.hero h1{color:#fff;font-size:clamp(34px,4.6vw,62px);max-width:15ch;text-shadow:0 2px 24px rgba(0,0,0,.25)}
+.hero h1 b{display:block;font-weight:800;color:var(--or)}
+.hero p{font-size:clamp(17px,1.6vw,20px);max-width:44ch;margin-top:18px;color:#F1F2F4}
+.hero .akcje{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;margin-top:28px}
+.hero .akcje a.t{color:#fff;font-weight:700;text-decoration:none;font-size:17px}
+.znaczki{display:flex;gap:6px;margin-bottom:22px}
+.znaczki span{width:14px;height:14px;background:var(--or)}
+.znaczki span:nth-child(2){background:#fff}
+.znaczki span:nth-child(3){display:none}
+/* sekcje */
+section{padding:96px 0}
+.szara{background:var(--bg2)}
+.glowa{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:40px;flex-wrap:wrap}
+.glowa p{max-width:52ch;color:var(--mut)}
+/* galerie */
+.zakl{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.zakl button{font:700 15px/1 "Manrope",sans-serif;color:var(--ink);background:#fff;border:1px solid var(--line);padding:13px 18px;border-radius:4px;cursor:pointer;display:inline-flex;align-items:center;gap:10px}
+.zakl button::before{content:"";width:9px;height:9px;background:var(--line);transition:background .2s}
+.zakl button[aria-selected=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.zakl button[aria-selected=true]::before{background:var(--or)}
+.temat{display:none}
+.temat.on{display:block}
+.temat .opis{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:end;margin-bottom:20px}
+.temat .opis p{max-width:62ch}
+.strz{display:flex;gap:8px}
+.strz button{width:48px;height:48px;border:1px solid var(--line);background:#fff;border-radius:4px;cursor:pointer;display:grid;place-items:center}
+.strz button:hover{border-color:var(--ink)}
+.strz svg{width:18px;height:18px}
+.pas{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px;cursor:grab;-webkit-overflow-scrolling:touch}
+.pas::-webkit-scrollbar{display:none}
+.pas.ciag{cursor:grabbing;scroll-snap-type:none}
+.pas figure{margin:0;flex:none;scroll-snap-align:start;position:relative}
+.pas img{height:440px;width:auto;border-radius:3px;user-select:none;-webkit-user-drag:none;pointer-events:none}
+.pas figcaption{font-size:14px;color:var(--mut);margin-top:10px;display:flex;align-items:center;gap:8px}
+.pas figcaption::before{content:"";width:7px;height:7px;background:var(--or)}
+/* kroki */
+.kroki{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}
+.krok{padding:30px 26px 10px 0;border-right:1px solid var(--line);margin-right:26px}
+.krok:last-child{border-right:0;margin-right:0}
+.krok .nr{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--ink);font-size:15px;margin-bottom:18px}
+.krok .nr span{display:grid;grid-template-columns:repeat(2,7px);gap:2px}
+.krok .nr span i{width:7px;height:7px;background:var(--line)}
+.krok .nr span i.o{background:var(--or)}
+.krok p{color:var(--mut);margin-top:10px;font-size:16px}
+.dwie{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
+.dwie img{border-radius:3px;width:100%;height:auto}
+.dwie p{margin-top:18px}
+.dwie ul{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:12px}
+.dwie li{display:flex;gap:12px;align-items:baseline;font-weight:600;color:var(--ink)}
+.dwie li::before{content:"";width:9px;height:9px;background:var(--or);flex:none;transform:translateY(-1px)}
+/* strefa rodzica */
+.rodzice{background:var(--ink);color:#C9CCD3;position:relative;overflow:hidden}
+.rodzice h2{color:#fff}
+.rodzice .ludek{position:absolute;right:-60px;top:40px;width:420px;opacity:.13;pointer-events:none}
+.rodzice .wrap{position:relative}
+.rodzice .glowa p{color:#AEB2BB}
+.szukaj{position:relative;max-width:560px;margin-bottom:34px}
+.szukaj input{width:100%;font:600 18px "Manrope",sans-serif;padding:18px 20px 18px 52px;border-radius:4px;border:2px solid #34363E;background:#202228;color:#fff;outline:none}
+.szukaj input:focus{border-color:var(--or)}
+.szukaj input::placeholder{color:#8A8E98}
+.szukaj svg{position:absolute;left:18px;top:50%;transform:translateY(-50%);width:20px;height:20px;color:var(--or)}
+.grupa h3{color:#fff;font-size:18px;margin:0 0 14px;display:flex;align-items:center;gap:10px}
+.grupa+.grupa{margin-top:30px}
+.chipy{display:flex;flex-wrap:wrap;gap:8px}
+.chipy a{display:inline-block;text-decoration:none;color:#fff;font-weight:700;font-size:15px;padding:11px 15px;border:1px solid #3A3D46;border-radius:4px;background:#1E2026;transition:border-color .2s,background .2s}
+.chipy a:hover{border-color:var(--or);background:#25272E}
+.chipy a[hidden]{display:none}
+.brak{display:none;color:#AEB2BB;margin-top:6px}
+.inst{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:46px}
+.inst div{border-top:2px solid var(--or);padding-top:16px;font-size:15px}
+.inst b{color:#fff;display:block;margin-bottom:4px;font-size:16px}
+/* kontakt */
+.kontakt .dwie{align-items:start}
+.dane{display:grid;gap:14px;margin-top:28px}
+.dane a,.dane span{display:flex;gap:12px;align-items:center;font-weight:700;color:var(--ink);text-decoration:none;font-size:19px}
+.dane svg{width:22px;height:22px;color:var(--or3);flex:none}
+form{background:#fff;border:1px solid var(--line);border-radius:4px;padding:30px;display:grid;gap:16px}
+label{display:grid;gap:6px;font-weight:700;font-size:14px;color:var(--ink)}
+input,select,textarea{font:500 16px "Manrope",sans-serif;padding:14px;border:1px solid #CDD2D9;border-radius:4px;background:#fff;color:var(--ink);width:100%}
+textarea{min-height:120px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--or);border-color:var(--or)}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.uwaga{font-size:13px;color:var(--mut)}
+/* stopka */
+footer{background:var(--bg2);border-top:1px solid var(--line);padding:46px 0 30px;font-size:15px}
+footer .g{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+footer img{width:150px}
+footer h4{margin:0 0 10px;color:var(--ink);font-size:15px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--or3)}
+footer .d{display:grid;gap:6px;color:var(--txt)}
+footer .dol{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:34px;padding-top:20px;color:var(--mut);font-size:14px}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+@media (max-width:1020px){
+ .nav{position:fixed;inset:70px 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 22px;border-bottom:1px solid var(--line);transform:translateY(-130%);transition:transform .3s;z-index:40}
+ .nav a{padding:15px 0;border-bottom:1px solid var(--line);font-size:18px}
+ .nav .rodzic{margin-top:14px;justify-content:center;padding:15px}
+ body.menu .nav{transform:none}
+ .burger{display:block}
+ body.menu .burger span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+ body.menu .burger span:nth-child(2){opacity:0}
+ body.menu .burger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+ .kroki{grid-template-columns:1fr 1fr}
+ .krok:nth-child(2){border-right:0;margin-right:0}
+ .dwie{grid-template-columns:1fr;gap:36px}
+}
+@media (max-width:640px){
+ body{font-size:16px}
+ section{padding:64px 0}
+ .top .wrap{height:62px}
+ .nav{inset:62px 0 auto 0}
+ .logo img{width:150px}
+ .hero{min-height:calc(100svh - 62px)}
+ .hero .wrap{padding-top:90px;padding-bottom:30px}
+ .hero::after{background:linear-gradient(180deg,rgba(14,15,19,0) 8%,rgba(14,15,19,.5) 34%,rgba(14,15,19,.86) 70%,rgba(14,15,19,.92) 100%)}
+ .hero picture img{object-position:62% 30%}
+ .hero h1{font-size:clamp(30px,8.6vw,40px)}
+ .hero p{margin-top:12px}
+ .hero .akcje{margin-top:24px;gap:12px 20px}
+ .znaczki{margin-bottom:16px}
+ .btn{padding:15px 22px}
+ .pas img{height:300px}
+ .temat .opis{grid-template-columns:1fr}
+ .strz{display:none}
+ .kroki{grid-template-columns:1fr}
+ .krok{border-right:0;margin-right:0;border-bottom:1px solid var(--line);padding:24px 0}
+ .krok:last-child{border-bottom:0}
+ .inst{grid-template-columns:1fr}
+ .rodzice .ludek{width:260px;right:-70px;top:20px}
+ .r2{grid-template-columns:1fr}
+ form{padding:22px}
+ footer .g{grid-template-columns:1fr 1fr}
+ footer .g>div:first-child{grid-column:1/-1}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="wrap">
+  <a class="logo" href="#" aria-label="PixelKidz - strona główna"><img src="img/logo-ciemne.png" width="403" height="83" alt="PixelKidz"></a>
+  <nav class="nav" id="nav">
+   <a href="#sesje">Sesje</a>
+   <a href="#jak">Dla placówek</a>
+   <a href="#onas">O nas</a>
+   <a href="#kontakt">Kontakt</a>
+   <a class="tel" href="tel:+48518682657">518 682 657</a>
+   <a class="rodzic" href="#rodzice"><span class="px"></span>Galerie dla rodziców</a>
+  </nav>
+  <button class="burger" aria-label="Menu" aria-controls="nav" aria-expanded="false"><span></span><span></span><span></span></button>
+ </div>
+</header>
+
+<main>
+<section class="hero" style="padding:0">
+ <picture><img src="img/hero-1600.webp" srcset="img/hero-640.webp 640w, img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" sizes="100vw" width="2000" height="1125" alt="Dzieci biegną po piasku w czasie dnia rodziny w przedszkolu" fetchpriority="high"></picture>
+ <div class="wrap">
+  <div class="znaczki" aria-hidden="true"><span></span><span></span><span></span></div>
+  <h1>Fotograf szkolny i przedszkolny w Warszawie <b>zdjęcia, na których dzieci są sobą</b></h1>
+  <p>Portrety, zdjęcia klasowe i grupowe, sesje świąteczne i wiosenne, bale ósmoklasistów. Robimy je w Państwa placówce, a rodzice oglądają gotowe zdjęcia w galerii online.</p>
+  <div class="akcje">
+   <a class="btn" href="#kontakt"><i></i>Umów sesję w placówce</a>
+   <a class="t" href="tel:+48518682657">lub zadzwoń: 518 682 657</a>
+  </div>
+ </div>
+</section>
+
+<section id="sesje">
+ <div class="wrap">
+  <div class="glowa">
+   <h2>Sesje, które robimy</h2>
+   <p>Każda sesja to osobna galeria. Wybierz temat i przesuń zdjęcia palcem albo myszą.</p>
+  </div>
+  <div class="zakl" role="tablist">
+   <button role="tab" aria-selected="true" data-t="szkola">Sesje szkolne</button>
+   <button role="tab" aria-selected="false" data-t="swieta">Sesje świąteczne</button>
+   <button role="tab" aria-selected="false" data-t="przedszkole">Przedszkola przez cały rok</button>
+   <button role="tab" aria-selected="false" data-t="bal">Bale i reportaż</button>
+  </div>
+
+  <div class="temat on" id="t-szkola">
+   <div class="opis"><p>Portret każdego ucznia, zdjęcie całej klasy i luźne kadry z kolegami. Bez sztywnego "siedź prosto" - dzieci ustawiamy tak, żeby wyglądały jak na co dzień.</p>
+    <div class="strz"><button aria-label="Wstecz" data-k="-1"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12.5 4 6.5 10l6 6"/></svg></button><button aria-label="Dalej" data-k="1"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m7.5 4 6 6-6 6"/></svg></button></div></div>
+   <div class="pas">
+    <figure><img src="img/szkola-portret.webp" width="880" height="880" alt="Portret ucznia na zielonym tle" loading="lazy"><figcaption>Portret ucznia</figcaption></figure>
+    <figure><img src="img/szkola-klasy.webp" width="1760" height="880" alt="Zdjęcia grupowe uczniów SP114" loading="lazy"><figcaption>SP114, zdjęcia z przyjaciółmi</figcaption></figure>
+    <figure><img src="img/szkola-primus.webp" width="1564" height="880" alt="Galeria sesji w szkole Primus" loading="lazy"><figcaption>Primus, sesja na boisku</figcaption></figure>
+    <figure><img src="img/szkola-grabski.webp" width="1760" height="880" alt="Zdjęcia uczniów szkoły Grabski w plenerze" loading="lazy"><figcaption>Grabski, sesja w plenerze</figcaption></figure>
+   </div>
+  </div>
+
+  <div class="temat" id="t-swieta">
+   <div class="opis"><p>Świąteczna scenografia przyjeżdża z nami do przedszkola. Każde dziecko ma kilka ujęć, a rodzice wybierają ulubione w galerii grupy.</p>
+    <div class="strz"><button aria-label="Wstecz" data-k="-1"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12.5 4 6.5 10l6 6"/></svg></button><button aria-label="Dalej" data-k="1"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m7.5 4 6 6-6 6"/></svg></button></div></div>
+   <div class="pas">
+    <figure><img src="img/swieta-zimne-ognie.webp" width="1318" height="880" alt="Trzy dziewczynki z zimnymi ogniami" loading="lazy"><figcaption>Baby City, zimne ognie</figcaption></figure>
+    <figure><img src="img/swieta-wilanowska.webp" width="1760" height="880" alt="Świąteczne portrety dzieci" loading="lazy"><figcaption>Zielona Żyrafa, Wilanowska 2026</figcaption></figure>
+    <figure><img src="img/swieta-puchatek.webp" width="1760" height="880" alt="Świąteczne portrety w przedszkolu Puchatek" loading="lazy"><figcaption>Puchatek 2026</figcaption></figure>
+    <figure><img src="img/swieta-kazimierza.webp" width="1760" height="880" alt="Świąteczna sesja grupy przedszkolnej" loading="lazy"><figcaption>Zielona Żyrafa, Jana Kazimierza 2026</figcaption></figure>
+    <figure><img src="img/swieta-kiga.webp" width="1760" height="880" alt="Świąteczne portrety dzieci w KiGa" loading="lazy"><figcaption>KiGa 2026</figcaption></figure>
+   </div>
+  </div>
+
+  <div class="temat" id="t-przedszkole">
+   <div class="opis"><p>Jesień, Wielkanoc, święta, dzień rodziny. Wracamy do przedszkoli kilka razy w roku, więc dzieci nas znają i nie boją się aparatu.</p>
+    <div class="strz"><button aria-label="Wstecz" data-k="-1"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12.5 4 6.5 10l6 6"/></svg></button><button aria-label="Dalej" data-k="1"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m7.5 4 6 6-6 6"/></svg></button></div></div>
+   <div class="pas">
+    <figure><img src="img/przedszkole-wiosna.webp" width="807" height="880" alt="Uśmiechnięta dziewczynka w wiosennej scenografii" loading="lazy"><figcaption>Sesja wielkanocna</figcaption></figure>
+    <figure><img src="img/fun-plaza.webp" width="1564" height="880" alt="Chłopcy biegną przez kałużę na plaży" loading="lazy"><figcaption>Dzień rodziny</figcaption></figure>
+    <figure><img src="img/przedszkole-wielkanoc.webp" width="1760" height="880" alt="Wiosenne portrety przedszkolaków z kwiatami" loading="lazy"><figcaption>Sesja wiosenna 2026</figcaption></figure>
+    <figure><img src="img/przedszkole-swieta.webp" width="1760" height="880" alt="Świąteczne portrety dzieci w przedszkolu Owocowe" loading="lazy"><figcaption>Owocowe, sesja świąteczna 2025</figcaption></figure>
+    <figure><img src="img/przedszkole-lato.webp" width="1760" height="880" alt="Letnie zdjęcia przedszkolaków na placu zabaw" loading="lazy"><figcaption>Sesja letnia</figcaption></figure>
+   </div>
+  </div>
+
+  <div class="temat" id="t-bal">
+   <div class="opis"><p>Bal ósmoklasisty od poloneza do ostatniego tańca, z fotobudką i rekwizytami. Reportaż, w którym nikt nie pozuje.</p>
+    <div class="strz"><button aria-label="Wstecz" data-k="-1"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12.5 4 6.5 10l6 6"/></svg></button><button aria-label="Dalej" data-k="1"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m7.5 4 6 6-6 6"/></svg></button></div></div>
+   <div class="pas">
+    <figure><img src="img/bal-polonez.webp" width="1318" height="880" alt="Polonez na balu ósmoklasisty" loading="lazy"><figcaption>Polonez</figcaption></figure>
+    <figure><img src="img/bal-fotobudka.webp" width="1318" height="880" alt="Uczniowie z rekwizytami w fotobudce" loading="lazy"><figcaption>Fotobudka</figcaption></figure>
+    <figure><img src="img/bal-parkiet.webp" width="1320" height="880" alt="Taniec na parkiecie w kolorowych światłach" loading="lazy"><figcaption>Parkiet</figcaption></figure>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="jak" class="szara">
+ <div class="wrap">
+  <div class="glowa">
+   <h2>Dla dyrekcji szkół i przedszkoli</h2>
+   <p>Cała organizacja jest po naszej stronie. Placówka ustala z nami termin, resztą zajmujemy się my.</p>
+  </div>
+  <div class="kroki">
+   <div class="krok"><div class="nr"><span><i class="o"></i><i></i><i></i><i></i></span>01</div><h3>Ustalamy termin</h3><p>Dopasowujemy dzień i godziny do planu lekcji albo rytmu dnia w przedszkolu.</p></div>
+   <div class="krok"><div class="nr"><span><i class="o"></i><i class="o"></i><i></i><i></i></span>02</div><h3>Przyjeżdżamy z tłem i światłem</h3><p>Rozstawiamy się w jednej sali. Portrety, zdjęcia klas i grup robimy sprawnie, bez rozbijania zajęć.</p></div>
+   <div class="krok"><div class="nr"><span><i class="o"></i><i class="o"></i><i class="o"></i><i></i></span>03</div><h3>Galeria dla każdej klasy</h3><p>Każda klasa i grupa dostaje własną galerię online z kompletem zdjęć.</p></div>
+   <div class="krok"><div class="nr"><span><i class="o"></i><i class="o"></i><i class="o"></i><i class="o"></i></span>04</div><h3>Rodzice wybierają</h3><p>Rodzice oglądają zdjęcia swojego dziecka i zamawiają te, które chcą mieć.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="rodzice" class="rodzice">
+ <img class="ludek" src="img/ludek.webp" width="579" height="700" alt="" loading="lazy">
+ <div class="wrap">
+  <div class="glowa">
+   <h2>Galerie dla rodziców</h2>
+   <p>Wpisz nazwę szkoły albo przedszkola i otwórz galerię swojej klasy lub grupy.</p>
+  </div>
+  <div class="szukaj">
+   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>
+   <input id="szukaj" type="search" placeholder="np. SP114, Puchatek, Zielona Żyrafa" aria-label="Szukaj placówki" autocomplete="off">
+  </div>
+  <div class="grupa">
+   <h3><span class="px"></span>Szkoły</h3>
+   <div class="chipy">
+    <a href="https://pixelkidz.pl/sp114">SP 114</a><a href="https://pixelkidz.pl/sp261">SP 261</a><a href="https://pixelkidz.pl/primus">Primus</a><a href="https://pixelkidz.pl/sp81/">SP 81</a><a href="https://pixelkidz.pl/kano">KANO</a><a href="https://pixelkidz.pl/grabski">Grabski</a><a href="https://pixelkidz.pl/sp343">SP 343</a><a href="https://pixelkidz.pl/wbs">WBS</a><a href="https://pixelkidz.pl/sesja-szkola-sp336/">SP 336</a><a href="https://pixelkidz.pl/clvlo/">CVL LO</a><a href="https://pixelkidz.pl/monnet">Monnet</a><a href="https://pixelkidz.pl/sp1/">SP 1</a><a href="https://pixelkidz.pl/sp128">SP 128</a>
+   </div>
+  </div>
+  <div class="grupa">
+   <h3><span class="px"></span>Przedszkola</h3>
+   <div class="chipy">
+    <a href="https://pixelkidz.pl/puszczyk">Puszczyk</a><a href="https://pixelkidz.pl/zz">Zielona Żyrafa</a><a href="https://pixelkidz.pl/bc">Baby City</a><a href="https://pixelkidz.pl/owocowe">Owocowe</a><a href="https://pixelkidz.pl/malyksiaze">Mały Książę</a><a href="https://pixelkidz.pl/puchatek">Puchatek</a><a href="https://pixelkidz.pl/malepasje">Małe Pasje</a><a href="https://pixelkidz.pl/kiga">KiGa</a><a href="https://pixelkidz.pl/cudownelata">Moje Cudowne Lata</a><a href="https://pixelkidz.pl/p376/">P 376</a>
+   </div>
+  </div>
+  <p class="brak" id="brak">Nie widzisz swojej placówki? Napisz do nas, podeślemy link do galerii.</p>
+  <div class="inst">
+   <div><b>Wybierz klasę lub grupę</b>Na stronie placówki są przyciski z sesjami z bieżącego i poprzedniego roku.</div>
+   <div><b>Obejrzyj zdjęcia</b>Galeria otwiera się w sklepie ze zdjęciami, osobno dla każdej klasy i grupy.</div>
+   <div><b>Zamów wybrane</b>Zaznaczasz zdjęcia swojego dziecka i składasz zamówienie online.</div>
+  </div>
+ </div>
+</section>
+
+<section id="onas">
+ <div class="wrap dwie">
+  <img class="kol" src="img/onas.webp" width="1600" height="800" alt="Czarno-białe świąteczne portrety dzieci" loading="lazy">
+  <div>
+   <h2>Marek, Kasia i Ola</h2>
+   <p>PixelKidz to trójka fotografów: Marek Kępiński, Kasia Sarna i Ola Błaziak. Fotografujemy w szkołach i przedszkolach w Warszawie i okolicach. Dzieci najlepiej wychodzą wtedy, gdy zapominają o aparacie, więc najpierw chwilę rozmawiamy i się wygłupiamy, a dopiero potem robimy zdjęcia.</p>
+   <ul>
+    <li>Portrety i zdjęcia klasowe w szkołach</li>
+    <li>Sesje sezonowe w przedszkolach</li>
+    <li>Bale ósmoklasistów, pikniki i dni rodziny</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section id="kontakt" class="szara kontakt">
+ <div class="wrap dwie">
+  <div>
+   <h2>Zaprośmy się do Państwa placówki</h2>
+   <p>Napiszcie, ile mniej więcej jest klas lub grup i jaki termin wchodzi w grę. Odpowiemy z propozycją.</p>
+   <div class="dane">
+    <a href="tel:+48518682657"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6.5 3.5h3l1.5 4.5-2 1.5a11 11 0 0 0 5.5 5.5l1.5-2 4.5 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 4.5 5.5a2 2 0 0 1 2-2z"/></svg>518 682 657</a>
+    <a href="mailto:foto.pixelkidz@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="5.5" width="18" height="13" rx="1"/><path d="m3.5 6.5 8.5 7 8.5-7"/></svg>foto.pixelkidz@gmail.com</a>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Warszawa i okolice</span>
+   </div>
+  </div>
+  <form onsubmit="event.preventDefault();this.querySelector('.uwaga').textContent='To podgląd - formularz zacznie wysyłać wiadomości na docelowej stronie.'">
+   <div class="r2">
+    <label>Imię i nazwisko<input name="imie" autocomplete="name"></label>
+    <label>Telefon<input name="tel" type="tel" autocomplete="tel"></label>
+   </div>
+   <label>E-mail<input name="email" type="email" autocomplete="email"></label>
+   <label>Placówka<select name="typ"><option>Szkoła</option><option>Przedszkole</option><option>Żłobek</option><option>Inne wydarzenie</option></select></label>
+   <label>Wiadomość<textarea name="wiad" placeholder="Np. przedszkole, 6 grup, sesja świąteczna w grudniu"></textarea></label>
+   <button class="btn" type="submit"><i></i>Wyślij zapytanie</button>
+   <p class="uwaga">Odpowiadamy zwykle tego samego lub następnego dnia.</p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="g">
+   <div><img src="img/logo-ciemne.png" width="403" height="83" alt="PixelKidz" loading="lazy"><p style="margin-top:14px;max-width:34ch">Fotografia szkolna i przedszkolna w Warszawie i okolicach.</p></div>
+   <div class="d"><h4>Kontakt</h4><a href="tel:+48518682657">518 682 657</a><a href="mailto:foto.pixelkidz@gmail.com">foto.pixelkidz@gmail.com</a></div>
+   <div class="d"><h4>Na stronie</h4><a href="#sesje">Sesje</a><a href="#rodzice">Galerie dla rodziców</a><a href="#kontakt">Kontakt</a></div>
+  </div>
+  <div class="dol"><span>© 2026 PixelKidz</span>
+<a class="wylinka-badge" href="https://wylinka.pl/?utm_source=pixelkidz.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+ </div>
+</footer>
+<script>
+(function(){
+var b=document.querySelector('.burger');
+b.addEventListener('click',function(){var o=document.body.classList.toggle('menu');b.setAttribute('aria-expanded',o)});
+document.querySelectorAll('.nav a').forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('menu');b.setAttribute('aria-expanded','false')})});
+document.querySelectorAll('.zakl button').forEach(function(t){t.addEventListener('click',function(){
+ document.querySelectorAll('.zakl button').forEach(function(x){x.setAttribute('aria-selected',x===t)});
+ document.querySelectorAll('.temat').forEach(function(x){x.classList.toggle('on',x.id==='t-'+t.dataset.t)});
+})});
+document.querySelectorAll('.temat').forEach(function(tm){
+ var p=tm.querySelector('.pas');
+ tm.querySelectorAll('.strz button').forEach(function(k){k.addEventListener('click',function(){p.scrollBy({left:k.dataset.k*p.clientWidth*.8,behavior:'smooth'})})});
+ var d=false,sx=0,sl=0,m=0;
+ p.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;d=true;m=0;sx=e.clientX;sl=p.scrollLeft;p.classList.add('ciag')});
+ window.addEventListener('pointermove',function(e){if(!d)return;m=Math.abs(e.clientX-sx);p.scrollLeft=sl-(e.clientX-sx)});
+ window.addEventListener('pointerup',function(){if(!d)return;d=false;p.classList.remove('ciag')});
+});
+var s=document.getElementById('szukaj'),br=document.getElementById('brak');
+function norm(x){return x.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ł/g,'l').replace(/\s+/g,'')}
+s.addEventListener('input',function(){var q=norm(s.value),n=0;
+ document.querySelectorAll('.chipy a').forEach(function(a){var ok=!q||norm(a.textContent).indexOf(q)>-1;a.hidden=!ok;if(ok)n++});
+ document.querySelectorAll('.grupa').forEach(function(g){g.style.display=g.querySelector('.chipy a:not([hidden])')?'':'none'});
+ br.style.display=n?'none':'block';
+});
+})();
+</script>
+</body>
+</html>
